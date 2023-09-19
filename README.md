@@ -7,7 +7,7 @@ Python script to compute Fourier Shell Correlation curve between two half-3D den
 Fourier Shell Correlation (FSC) is a gold-standard methodology which is used in cryo-EM field to estimate the resolution of cryo-EM maps.
 FSC, originally proposed by Harauz and van Heel in 1986, is a generalization to three dimensions of two-dimensional Fourier Ring Correlation (FRC).<sup>1</sup>
 As in the case of FRC, Fourier Shell Correlation analysis requires to divide data set into two independent subsets. In this particular example, FSC is computed between two half-3D density maps.
-Half-maps were generated using interleaved frames (odd and even) of conformational ensemble (see repository _3D_DensityMap_ for more details). 
+Half-maps were generated using interleaved frames (odd and even) of conformational ensemble (see repository [_3D_DensityMap_](https://github.com/mpopara/3D_DensityMap) for more details). 
 
 Calculating correlation function in three-dimensional space is computationally demanding, since it requires to solve triple integrals. This is easily circumvented via the use of Fourier transforms,
 since the Fourier transform of the correlation between two functions is equal to the simple product of their Fourier transforms.
@@ -30,11 +30,11 @@ Choice of FSC threshold at which the precision (or resolution) is estimated, is 
 
 For the computation of FSC required are:
 
-* two half-maps in .mrc file format (see repository _3D_DensityMap_ for details on how to compute half maps)
+* two half-maps in .mrc file format (see repository[_3D_DensityMap_](https://github.com/mpopara/3D_DensityMap) for details on how to compute half maps)
 
 
 ## Dependencies
-_compute_fsc.py_ is a python script which was tested with provided exemplary data under the following configuration:
+_compute_fsc.py_ is a python script which was tested with provided [exemplary data](https://github.com/mpopara/FourierShellCorr/tree/main/example_data) under the following configuration:
 
 * Windows Subsystem Linux (WSL) Ubuntu 18.04.5
 * Python 3.7.10
